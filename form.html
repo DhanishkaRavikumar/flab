@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Form validation</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form>
+<h2 id="message">Welcome!</h2>
+Name:
+<input type="text" id="stuname" name="stuname" required>
+<br><br>
+Email:
+<input type="email" id="email" name="email" required>
+<br><br>
+Password:
+<input type="password" id="password" name="password" minlength="6" required>
+<br><br>
+Age:
+<input type="number" id="stuage" name="stuage"min="18" max="60">
+<br><br>
+Phonenumber:
+<input type="number" name="tel" [0-9]{10}>
+<br><br>
+<button type="button" onclick="changeText()">click Me</button>
+</form>
+<script>
+function changeText() {
+document.getElementById("message").innerHTML =("Hello, Freshers!");
+}
+</script><br><br>
+</body>
+</html>
