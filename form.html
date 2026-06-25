@@ -1,32 +1,43 @@
 <html>
 <head>
 <title>Form validation</title>
+<style>
+form {
+background-image:url('sky.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+padding:200px;
+border-radius:100px;
+}
+</style>                                                                                                                                                                                                                                                                                                        
 </head>
 <body>
-<h2>Registration Form</h2>
+<h2><marquee>Registration Form</marquee></h2>
 <form>
 <h2 id="message">Welcome!</h2>
-Name:
+<label for="name">Name:</label><br>
 <input type="text" id="stuname" name="stuname" required>
 <br><br>
-Email:
+<label for="email">Email:</label><br>
 <input type="email" id="email" name="email" required>
 <br><br>
-Password:
+<label for="password">Password:</label><br>
 <input type="password" id="password" name="password" minlength="6" required>
 <br><br>
-Age:
-<input type="number" id="stuage" name="stuage"min="18" max="60">
-<br><br>
-Phonenumber:
+<label for="age">Age:</label><br>
+<input type="number" id="stuage" name="stuage"min="18" max="60"><br><br>
+<label for="number">Number:</label><br>
 <input type="number" name="tel" [0-9]{10}>
 <br><br>
-<button type="button" onclick="changeText()">click Me</button>
+<label for="club">Club:</label><br>
+<textarea id="club" name ="club"></textarea><br><br>
+<button type="button" onclick="changeText()">Click Me</button>
 </form>
 <script>
 function changeText() {
-document.getElementById("message").innerHTML =("Hello, Freshers!");
+document.getElementById("message").innerHTML ="Hello, Freshers!";
 }
-</script><br><br>
+</script>
 </body>
 </html>
